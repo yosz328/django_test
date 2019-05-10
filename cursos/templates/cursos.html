@@ -1,0 +1,10 @@
+<html>
+<h1> Cursos dictados este semestre </h1>
+    <ul>
+        {% for curso in cursos %}
+            <li>
+                <a href=" /curso/{{curso.sigla}} " >  {{curso.sigla}} {{curso.nombre}} </a>
+            </li>
+            {% endfor %}
+    </ul>
+</html>
